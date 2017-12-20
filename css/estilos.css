@@ -1,0 +1,258 @@
+body{
+ background-color: #02010a;
+ font-family:"Dancing Script", cursive;
+}
+#contenido{
+  /*margin: 0px 50px 0px 50px;*/
+  max-width: 900px;
+
+}
+header{
+  background-color: #5b7989;
+  color: white;
+  border-radius: 10px 10px 0px 0px;/* borde del header*/
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0px 10px;
+  animation: encabezado 1.2s;
+}
+header p{
+  /*text-align: left;*/
+  text-shadow: 2px 2px 2px #02010a;
+  font-size: 22px;
+  flex-grow: 4;
+}
+header nav{
+    flex-grow: 0.5;
+}
+ul{
+ list-style: none;
+ padding: 8px 0px;
+}
+li{
+display: inline-block;
+ color: white;
+ font-size: 16px;
+ padding: 0px 10px;
+}
+ img{
+  box-shadow:  2px 2px 2px #02010a;
+  border: 1px solid black;
+}
+#img_secundarios{
+  /*display: flex;
+  flex-flow: nowrap;
+  padding: 25px 10px;*/
+  background-color: #d5c75f;
+  border: 1px solid #d5c75f;
+  text-align: center;
+}
+#img_principal{
+background-color: #82c3a6;
+padding: 30px 80px;
+}
+#izquierda{
+  margin: 20px 25px;
+  width: 43%;
+  display: inline-grid;
+}
+#derecha{
+  margin: 20px 25px;
+  width: 43%;
+  display: inline-grid;
+}
+ul li:hover{
+  background-color: orange;
+}
+.imagen_izquierda:hover{
+  transform: rotate(10deg);
+  box-shadow: 4px 2px 2px #82c3a6;
+}
+.imagen_derecha:hover{
+  transform: translate(20px,-5px);
+  box-shadow: 3px 2px 2px #82c3a6;
+}
+footer{
+}
+footer div article{
+  background-color: #c6d5c5;
+  box-sizing: border-box;
+  float: left;
+  width: 100%;
+  height: 180px;
+}
+.text_paisa{
+  text-align: center;
+}
+.text_retra{
+  text-align: center;
+}
+footer article p{
+  font-size: 12px;
+}
+
+/*.pie{
+  border-radius: 0px 0px 10px 10px;
+  background-color: #c6d5c5;
+  /*padding: 10px 10px;*/
+  /*display: flex;
+flex-flow: nowrap;
+  padding: 10px 10px;
+  /*background-color: #d5c75f;
+}*/
+.fotografia1{
+display: inline;
+margin: -40px 5px;
+}
+.fotografia2{
+display: inline;
+}
+.fotografia3{
+display: inline;
+}
+.contacto{
+  font-size: 20px;
+  width: 25%;
+  border-radius: 0px 0px 0px 10px;
+}
+.terminos{
+  font-size: 20px;
+  width: 25%;
+}
+.redes{
+font-size: 20px;
+width: 25%;
+}
+.derechos{
+  font-size: 20px;
+  width: 25%;
+  border-radius: 0px 0px 10px 0px;
+}
+@media screen and (min-width:861px) {
+  #contenido{
+    width: 95%;
+    margin: 10px auto;
+  }
+  footer div article{
+    padding: 0px 10px;
+  }
+}
+@media  (min-width:601px)and (max-width:860px) {
+  #contenido{
+    width: 98%;
+    margin: 0 auto;
+
+  }
+  header{
+    text-align: center;
+  }
+  #img_secundarios{
+    text-align: center;
+    background-color: rgba(245, 187, 95, 0.74);
+  }
+  #izquierda{
+    width: 85%;
+  }
+  #derecha{
+    width: 85%;
+  }
+  footer div article{
+    padding: 10px 30px;
+  }
+  .contacto{
+    width: 50%;
+    border-radius: 0px 0px;
+
+  }
+  .terminos{
+    width: 50%;
+  }
+  .redes{
+    width: 50%;
+    height: 220px;
+    border-radius: 0px 0px 0px 10px;
+  }
+  .derechos{
+    width: 50%;
+    height: 220px;
+
+  }
+  #facebook{
+    width: 80%;
+  }
+  #twitter{
+    width: 80%;
+  }
+  #instagram{
+    width: 80%;
+
+  }
+
+}
+@media screen and (max-width:600px) {
+  #contenido{
+    width: 100%;
+    margin: 0 auto;
+  }
+  p{
+    text-align: center;
+  }
+  nav{
+    text-align: center;
+  }
+  #img_principal{
+
+    padding: 8px 18px;
+    /*margin: 10px 10px;*/
+  }
+  #izquierda{
+    margin: 10px 5px;
+    width: 85%;
+  }
+  .imagen_izquierda{
+    width: 100%;
+  }
+  #derecha{
+    width: 85%;
+    margin: 0px 5px;
+  }
+  .contacto{
+    width: 100%;
+    height: 90%;
+    border-radius: 0px 0px;
+
+  }
+  .terminos{
+    width: 100%;
+    height: 50%;
+  }
+  .redes{
+    width: 100%;
+    height: 160%;
+  }
+  .derechos{
+
+    width: 100%;
+    height: 150px;
+    border-radius: 0px 0px 10px 10px;
+  }
+  footer div article{
+    padding: 10px 40px;
+    /*text-align: left;*/
+  }
+  footer div article p{
+    font-size: 12px;
+    text-align: left;
+  }
+}
+@-webkit-keyframes encabezado{
+  0%{
+    margin-top: 150%;
+  }
+  60%{
+    margin-top: -5%;
+  }
+  100%{
+    margin-top: 100%;
+  }
+}

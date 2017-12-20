@@ -1,0 +1,50 @@
+
+#seccion{
+  background-color: #d5c75f;
+}
+#superior{
+  text-align: center;
+  padding: 10px 0px;
+
+}
+#inferior{
+  text-align: center;
+  padding: 10px 0px;
+  /*display: flex;
+  flex-flow: nowrap;*/
+}
+section div article img{
+  width: 27%;
+  text-align: center;
+}
+section div article{
+  display: inline;
+  margin: 10px 20px;
+  /*display: grid;*/
+  /*width: 30%;*/
+
+}
+#img1{
+  -webkit-filter:blur(10px);
+  filter: blur(10px);
+
+}
+#img2,#img4,#img6{
+  filter: sepia(90%);
+}
+#img3,#img5{
+  filter: grayscale(100%);
+}
+@media screen and (max-width:800px){
+  section div article {
+    display: grid;
+
+
+  }
+  section div article img{
+    width: 100%;
+  }
+}
+
+
+}
